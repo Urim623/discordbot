@@ -92,7 +92,7 @@ async def on_message(message: discord.Message):
         or "wuss-up" in message.content.lower()
         or "wussup" in message.content.lower()
     ):
-        await message.channel.send("What's up! I'm Urispoke, great to meet u!")
+        await message.channel.send("'Ssup! I'm Urispoke, great to meet u!")
     elif (
         "can you introduce" in message.content.lower()
         or "what you can do" in message.content.lower()
@@ -298,15 +298,12 @@ async def on_message(message: discord.Message):
         "lol" in message.content.lower()
         or "hahaha" in message.content.lower()
         or "kkk" in message.content.lower()
-        or "🤣" in message.content.lower()
     ):
         await message.channel.send(
             "🤣🤣🤣"
         )
     elif (
         "sad" in message.content.lower()
-        or "sorry" in message.content.lower()
-        or "😢" in message.content.lower()
     ):
         await message.channel.send(
             "😢"
@@ -327,30 +324,30 @@ async def on_message(message: discord.Message):
 async def add(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left + right)
-    msg = await ctx.send("u have to go back to elementary school hahahahahahhahahah")
+    msg = await ctx.send("u have to go back to elementary school")
     await asyncio.sleep(1.5)
-    await msg.edit(content="just joking lol")
+    await msg.edit(content="just joking :)")
 @bot.command()
 async def subtract(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left - right)
-    msg = await ctx.send("u have to go back to elementary school hahahahahahhahahah")
+    msg = await ctx.send("u have to go back to elementary school")
     await asyncio.sleep(1.5)
-    await msg.edit(content="just joking lol")
+    await msg.edit(content="just joking :)")
 @bot.command()
 async def multiply(ctx, left: int, right: int):
     """Multiplies two numbers together."""
     await ctx.send(left * right)
-    msg = await ctx.send("u should go back to elementary school hahahahahahhahahah")
+    msg = await ctx.send("u should go back to elementary school")
     await asyncio.sleep(1.5)
-    await msg.edit(content="just joking lol")
+    await msg.edit(content="just joking :)")
 @bot.command()
 async def divide(ctx, left: int, right: int):
     """Divides two numbers together."""
     await ctx.send(left / right)
-    msg = await ctx.send("u should go back to elementary school hahahahahahhahahah")
+    msg = await ctx.send("u should go back to elementary school")
     await asyncio.sleep(1.5)
-    await msg.edit(content="just joking lol")
+    await msg.edit(content="just joking :)")
 
 
 @bot.command(name="addrole")
